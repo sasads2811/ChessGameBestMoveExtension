@@ -1,0 +1,49 @@
+<script src="popup.js"></script>
+<style>
+  .container {
+    background: #a1ffce; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #faffd1,
+      #a1ffce
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #faffd1,
+      #a1ffce
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    max-width: 300px;
+    width: 150px;
+    max-height: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+  }
+  h1 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  #numberDisplay {
+    font-size: 20px;
+    color: #007bff;
+    margin-top: 0;
+  }
+  #errorDisplay {
+    font-size: 20px;
+    color: #ff0000;
+    margin-top: 0;
+  }
+</style>
+<div class="container">
+  <h1>Best Move</h1>
+  <h2 id="numberDisplay"></h2>
+  <h2 id="errorDisplay"></h2>
+</div>
